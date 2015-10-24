@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterRating.Entity", "MovieTheaterRating.Entity\MovieTheaterRating.Entity.csproj", "{D93C6DEA-A68F-4442-9F8A-25791901BA64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterRating.Data", "MovieTheaterRating.Data\MovieTheaterRating.Data.csproj", "{E01A63CF-3249-4784-91D6-275077E8EA2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterRating.WebApi", "MovieTheaterRating.WebApi\MovieTheaterRating.WebApi.csproj", "{0E97A3C3-8B7F-4FB5-BDC8-D2A5F09B04EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common", "Core.Common\Core.Common.csproj", "{0BF63FBC-5200-4719-AE76-15703ACB60E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterRating.Test", "MovieTheaterRating.Test\MovieTheaterRating.Test.csproj", "{2D4B0D5E-EB14-400D-926C-BA33142ACAFC}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MovieTheaterRating.Client", "http://localhost:54921", "{8689221E-BE48-45C6-ADBF-E0AA80178D88}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54921"
+		Debug.AspNetCompiler.PhysicalPath = "MovieTheaterRating.Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54921\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54921"
+		Release.AspNetCompiler.PhysicalPath = "MovieTheaterRating.Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54921\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "MovieTheaterRating.Client\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterRating.ConsoleApp", "MovieTheaterRating.ConsoleApp\MovieTheaterRating.ConsoleApp.csproj", "{6EB47955-0663-43B5-A537-C7277A351D4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D93C6DEA-A68F-4442-9F8A-25791901BA64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93C6DEA-A68F-4442-9F8A-25791901BA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93C6DEA-A68F-4442-9F8A-25791901BA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93C6DEA-A68F-4442-9F8A-25791901BA64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E01A63CF-3249-4784-91D6-275077E8EA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E01A63CF-3249-4784-91D6-275077E8EA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E01A63CF-3249-4784-91D6-275077E8EA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E01A63CF-3249-4784-91D6-275077E8EA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E97A3C3-8B7F-4FB5-BDC8-D2A5F09B04EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E97A3C3-8B7F-4FB5-BDC8-D2A5F09B04EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E97A3C3-8B7F-4FB5-BDC8-D2A5F09B04EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E97A3C3-8B7F-4FB5-BDC8-D2A5F09B04EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BF63FBC-5200-4719-AE76-15703ACB60E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF63FBC-5200-4719-AE76-15703ACB60E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF63FBC-5200-4719-AE76-15703ACB60E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF63FBC-5200-4719-AE76-15703ACB60E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4B0D5E-EB14-400D-926C-BA33142ACAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4B0D5E-EB14-400D-926C-BA33142ACAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4B0D5E-EB14-400D-926C-BA33142ACAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4B0D5E-EB14-400D-926C-BA33142ACAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8689221E-BE48-45C6-ADBF-E0AA80178D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8689221E-BE48-45C6-ADBF-E0AA80178D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8689221E-BE48-45C6-ADBF-E0AA80178D88}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8689221E-BE48-45C6-ADBF-E0AA80178D88}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6EB47955-0663-43B5-A537-C7277A351D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB47955-0663-43B5-A537-C7277A351D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB47955-0663-43B5-A537-C7277A351D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB47955-0663-43B5-A537-C7277A351D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

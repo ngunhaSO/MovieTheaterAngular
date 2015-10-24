@@ -1,0 +1,6 @@
+C:\Users\Jacky\Documents\BitBucket\movietheaterrating\MovieTheaterRating\MovieTheaterRating.Console\bin\Debug\MovieTheaterRating.Console.exe.config
+C:\Users\Jacky\Documents\BitBucket\movietheaterrating\MovieTheaterRating\MovieTheaterRating.Console\bin\Debug\MovieTheaterRating.Console.exe
+C:\Users\Jacky\Documents\BitBucket\movietheaterrating\MovieTheaterRating\MovieTheaterRating.Console\bin\Debug\MovieTheaterRating.Console.pdb
+C:\Users\Jacky\Documents\BitBucket\movietheaterrating\MovieTheaterRating\MovieTheaterRating.Console\obj\Debug\MovieTheaterRating.Console.csprojResolveAssemblyReference.cache
+C:\Users\Jacky\Documents\BitBucket\movietheaterrating\MovieTheaterRating\MovieTheaterRating.Console\obj\Debug\MovieTheaterRating.Console.exe
+C:\Users\Jacky\Documents\BitBucket\movietheaterrating\MovieTheaterRating\MovieTheaterRating.Console\obj\Debug\MovieTheaterRating.Console.pdb

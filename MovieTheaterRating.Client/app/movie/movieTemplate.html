@@ -1,0 +1,132 @@
+﻿
+<div class="panel panel-primary">
+    <div class="panel-heading"
+         style="font-size:large">
+        Movie List
+    </div>
+    <br />
+    <div class="form-group">
+        <label class="col-md-1 control-label" for="searchTitle">Title: </label>
+        <div class="col-md-4">
+            <input class="form-control"
+                   id="searchTitle"
+                   type="text"
+                   placeholder="Search by title"
+                   ng-model="search.title" />
+        </div>
+        <button type="button"
+                class="btn btn-primary"
+                ng-click="vm.advancedSearch()">
+            Advanced search
+        </button>
+    </div>
+
+
+    <!--<div class="form-group" ng-show="vm.showAdvancedSearch">
+        <label class="col-md-2 control-label" for="searchActor">Actor/actress: </label>
+        <div class="col-md-4">
+            <input class="form-control"
+                   id="searchActor"
+                   type="text"
+                   placeholder="Search by actor/actress"
+                   ng-model="search.movieCharacters.firstName" />
+        </div>
+        <br />
+    </div>-->
+
+    <div class="form-group" ng-show="vm.showAdvancedSearch">
+        <label class="col-md-2 control-label" for="searchActor">Rating: </label>
+        <div class="col-md-6">
+            <rating ng-model="search.audienceRating" max="vm.max"
+                    readonly="false"
+                    on-hover="vm.hoveringOver(value)"
+                    on-leave="vm.leave(value)"
+                    titles="['one','two','three']">
+                
+            </rating>
+            {{search.audienceRating}}
+            <a ng-click="search.audienceRating=''">clear</a>
+        </div>
+        <br />
+    </div>
+
+    <div class="panel-body table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>
+                        <button type="button"
+                                class="btn btn-primary"
+                                ng-click="vm.toggleImage()">
+                            {{vm.showImage ? "Hide" : "Show"}} Image
+                        </button>
+                    </td>
+                    <td>Title</td>
+                    <td>Year</td>
+                    <td>Runtime</td>
+                    <td>MPAA Rating</td>
+                    <td>Release Date</td>
+                    <td>Audience Rating</td>
+                    <!--<td>Starrings</td>-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="movie in vm.movies | filter : search">
+                    <td>
+                        <img ng-if="vm.showImage"
+                             ng-src="{{movie.posterImg}}"
+                             style="width:50px;margin:2px"
+                             title="{{movie.title}}">
+                    </td>
+                    <td>
+                        <a ui-sref="movieDetail({movieId: movie.id})">
+                            {{ movie.title}}
+                        </a>
+                    </td>
+                    <td>{{ movie.year }}</td>
+                    <td>{{ movie.runtime }}</td>
+                    <td>{{ movie.mpaaRating }}</td>
+                    <td>{{ movie.releaseDate | date: 'MM/dd/yyyy'}}</td>
+                    <td>{{movie.audienceRating}}
+                        <rating ng-model="rate" ng-init="rate=movie.audienceRating/100 * 10" max="vm.max"
+                                readonly="vm.isReadonly">
+                        </rating>
+                    </td>
+                    <!--<td>
+                        <table>
+                            <tbody>
+                                <tr ng-repeat="cast in movie.movieCharacters">
+                                    <td>{{ cast.firstName}} {{cast.lastName}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </td>-->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--form class="form-horizontal" name="testForm" ng-submit="vm.submitForm()">
+    <div class="form-group">
+        <label class="col-md-2 control-label"
+               for="fname">first:</label>
+        <div class="col-md-4">
+            <input class="form-control"
+                   id="fname"
+                   type="text"
+                   placeholder="First Name"
+                   ng-model="vm.testForm.first" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="lname">last:</label>
+        <div class="col-md-4">
+            <input class="form-control"
+                   id="lname"
+                   ng-model="vm.testForm.last">
+        </div>
+    </div>
+    <input type="submit" value="Submit" id="submit" class="btn btn-danger">
+</form>-->

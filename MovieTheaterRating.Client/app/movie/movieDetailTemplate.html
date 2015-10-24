@@ -1,0 +1,94 @@
+﻿<div class="panel panel-primary">
+
+    <div class="panel-heading" style="font-size:large">
+        TITLE:: {{vm.movie.title}}
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-4">Year:</div>
+                    <div class="col-md-7">{{vm.movie.year}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Runtime:</div>
+                    <div class="col-md-7">{{vm.movie.runtime}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Rating:</div>
+                    <div class="col-md-7">{{vm.movie.mpaaRating}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Release Date:</div>
+                    <div class="col-md-7">{{vm.movie.releaseDate | date: 'MM/dd/yyyy' }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Audience Rating:</div>
+                    <div class="col-md-7">
+                        <rating ng-model="vm.rate" max="vm.max"
+                                readonly="vm.isReadonly"
+                                on-hover="vm.hoveringOver(value)" on-leave="overStar = null">
+
+                        </rating>
+                        <span class="label" 
+                              ng-class="{'label-warning': vm.movie.audienceRating < 30, 'label-info': vm.movie.audienceRating >= 30 && vm.movie.audienceRating<70, 'label-success': vm.movie.audienceRating>=70}" 
+
+                        </rating> 
+                        <span class="label" 
+                              ng-class="{'label-warning':vm.movie.audienceRating<30, 'label-info': vm.movie.audienceRating>=30 && vm.movie.audienceRating<70, 
+                                'label-success': vm.movie.audienceRating>=70}" 
+                              ng-show="vm.movie.audienceRating">{{vm.movie.audienceRating}}%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="col-md-6">
+                    <img class="center-block img-responsive"
+                         style="width:200px; height:80px;margin:2px;"
+                         ng-src="{{vm.movie.posterImg}}"
+                         title="{{vm.movie.title}}">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-12">{{ vm.movie.synopsis }}</div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="row" ng-repeat="cast in vm.movie.movieCharacters">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-2">{{cast.firstName}} {{cast.lastName}}: </div>
+                    <div class="col-md-7">{{cast.characterInMovie }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+
+    <div class="panel-footer">
+        <a class="btn btn-default"
+           ui-sref="movies"
+           style="width:80px">
+            <I class="glyphicon glyphicon-chevron-left"></I>
+            Back
+        </a>
+        <a class="btn btn-primary"
+           ui-sref="movieEdit.info({movieId: vm.movie.id})"
+           style="width:80px;margin-left:10px">
+            Edit
+        </a>
+    </div>
+</div>

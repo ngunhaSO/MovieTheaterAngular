@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Theater Rating</title>
+	<meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="app/movie/movie.css" rel="stylesheet" />
+</head>
+<body ng-app="movieTheaterRating">
+    <div class="container">
+        <a ui-sref="home">Home</a>
+        <a ui-sref="movies">Movies</a>
+    </div>
+
+    <div class="container">
+        <div ui-view></div>
+    </div>
+    <!-- Libraries scripts -->
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap.js"></script> <!-- ui boostrap stuff-->
+    <script src="Scripts/angular-resource.js"></script> <!-- using $resource directive-->
+    <script src="Scripts/angular-mocks.js"></script>    <!-- mocking service-->
+    <script src="Scripts/angular-ui-router.js"></script> <!--for routing-->
+    
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular-ui/ui-utils.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    
+    <!-- Application script -->
+    <script src="app/app.js"></script>
+    <script src="app/appRouteConfig.js"></script>
+
+    <!--Constant values-->
+    <script src="app/common/constantService.js"></script>
+
+
+    <!--Movie-->
+    <script src="app/movie/movieModule.js"></script>
+    <script src="app/movie/movieResource.js"></script>
+    <script src="app/movie/movieService.js"></script>
+    <script src="app/movie/movieController.js"></script>
+    <script src="app/movie/movieDetailController.js"></script>
+
+    <!--Actor-->
+
+    <!-- Controller scripts -->
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+C:\Users\JackyNguyen\Desktop\Repo\movietheaterrating\MovieTheaterRating\Core.Common\bin\Debug\Core.Common.dll
+C:\Users\JackyNguyen\Desktop\Repo\movietheaterrating\MovieTheaterRating\Core.Common\bin\Debug\Core.Common.pdb
+C:\Users\JackyNguyen\Desktop\Repo\movietheaterrating\MovieTheaterRating\Core.Common\obj\Debug\Core.Common.csprojResolveAssemblyReference.cache
+C:\Users\JackyNguyen\Desktop\Repo\movietheaterrating\MovieTheaterRating\Core.Common\obj\Debug\Core.Common.dll
+C:\Users\JackyNguyen\Desktop\Repo\movietheaterrating\MovieTheaterRating\Core.Common\obj\Debug\Core.Common.pdb
